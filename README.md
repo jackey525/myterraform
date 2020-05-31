@@ -125,3 +125,11 @@ terraform destroy
 *.tfstate
 *.tfstate.backup
 ```
+# EC2會建置一個 Elastic IP 彈性 IP
+
+只要滿足以下條件，彈性 IP 地址便不會產生費用：
+
+    彈性 IP 地址與 EC2 實例關聯。
+    與彈性 IP 地址關聯的實例正在運行。
+    該實例只附加有一個彈性 IP 地址。
+
