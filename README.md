@@ -112,7 +112,7 @@ terraform init
 ```
 開始建置 provision EC2
 ```
-terraform apply 
+terraform apply -auto-approve
 ```
 刪除剛剛建立的所有 服務
 ```
