@@ -10,7 +10,7 @@ resource "aws_key_pair" "ubuntu" {
 
 resource "aws_instance" "ubuntu" {
   key_name      = aws_key_pair.ubuntu.key_name
-  ami           = "ami-0278fe6949f6b1a06"
+  ami           = "ami-0a102fd083ba45bb2"
   instance_type = "t2.micro"
 
   tags = {
