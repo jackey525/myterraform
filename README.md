@@ -136,10 +136,10 @@ terraform destroy
 # ssh-agent forwarding 透過 Bastion跳板主機 登入 EC2 instance
 Local —(SSH)—> Server1 —(SSH)—> Server2
 
-不要把 public key 放進去跳板主機內 ，key 都是放在 自己的 電腦上
+不要把 private key 放進去跳板主機內 ，key 都是放在 自己的 電腦上
 
 ```
-$ ssh-add 自己的key
+$ ssh-add 自己的 private key
 //外部 跳板主機
 $ ssh -A user@server 
 內部ㄧ樣，key 已經帶著
