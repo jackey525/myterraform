@@ -133,3 +133,15 @@ terraform destroy
     與彈性 IP 地址關聯的實例正在運行。
     該實例只附加有一個彈性 IP 地址。
 
+# ssh-agent forwarding 透過 Bastion跳板主機 登入 EC2 instance
+Local —(SSH)—> Server1 —(SSH)—> Server2
+
+不要把 public key 放進去跳板主機內 ，key 都是放在 自己的 電腦上
+
+```
+$ ssh-add 自己的key
+//外部 跳板主機
+$ ssh -A user@server 
+內部ㄧ樣，key 已經帶著
+$ ssh -A user@server
+```
